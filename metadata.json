@@ -1,0 +1,6 @@
+{
+  "name": "Weather Intelligence App",
+  "description": "An interactive weather forecasting application featuring live geocoding, current weather conditions, 7-day forecast metrics, and rule-based AI-style planning recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
