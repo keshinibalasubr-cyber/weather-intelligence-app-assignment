@@ -2,19 +2,22 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Weather Intelligence Platform
 
-This contains everything you need to run your app locally.
+This application fetches real-time weather analytics and generates custom operational planning recommendations using the public Open-Meteo API.
 
-View your app in AI Studio: https://ai.studio/apps/3c334c50-a10e-48bb-ab1b-5e31727e5b7f
+## 🚀 Deployment Instructions & Engineering Handoff
 
-## Run Locally
+### 1. GitHub Sync Sequence
+1. Connect your workspace directly to continuous integration networks.
+2. In Google AI Studio, access the top-right Settings panel.
+3. Initiate the "Export to GitHub" action.
+4. Grant authorized access to your account and select the target repository.
+5. Push the source branch (typically `main`) to complete synchronization.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 2. Cloudflare Pages Configuration
+Deploy the static single-page assets globally using the following build configurations:
+* **Framework Preset:** `Vite` (or `React`)
+* **Build Command:** `npm run build`
+* **Output Directory:** `dist`
+* **Node Compatibility:** Ensure the environment has the environment version variable `NODE_VERSION = 18` or higher configured.
